@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "NoMarquee",
+  "description": "This extension changes marquee elements to paragraph elements inside the html body.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jquery-3.3.1.min.js",
+        "content.js"
+      ]
+    }
+  ]
+}
